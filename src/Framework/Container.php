@@ -73,7 +73,9 @@ class Container
     }
 
     $factory = $this->definitions[$id];
-    $dependency = $factory();
+    //Grabbing the factory function for a specific dependency
+    //we pass the container instance into the factory function by passing in this
+    $dependency = $factory($this);
 
     $this->resolved[$id] = $dependency;
 

@@ -10,4 +10,6 @@ class Paths
   public const SOURCE = __DIR__ . "/../../";
   //constant for the root directory of our project
   public const ROOT = __DIR__ . "/../../../";
+
+  public const STORAGE_UPLOADS = __DIR__ . "/../../../storage/uploads";
 }
